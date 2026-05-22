@@ -23,7 +23,7 @@ body {
   background-position: center;
 }
 
-─── Dark tint overlay ─────────────────────────────────────── */ .overlay {
+.overlay {
   position: fixed;
   inset: 0;
   background: url("./assets/bg.jpg");
