@@ -13,20 +13,22 @@ body {
 }
 
 .bg-default {
-  background-image: url("./assets/bg.jpg");
+  background: url("./assets/bg.jpg");
+  position: relative;
   display: flex;
   align-items: center;
-  min-height: 100vh;
   justify-content: center;
-  object-fit: cover;
-  background-size: cover;
+  width: 100vw;        /* stretch full viewport width */
+  min-height: 100vh;   /* stretch full viewport height */
+  background-size: cover;          /* fill the screen — landscape image fits desktop perfectly */
+  background-repeat: no-repeat;
   background-position: center;
 }
 
 .overlay {
   position: fixed;
   inset: 0;
-  background: url("./assets/bg.jpg");
+  background: rgba(0, 0, 0, 0.3);
   z-index: 0;
   pointer-events: none;
 }
